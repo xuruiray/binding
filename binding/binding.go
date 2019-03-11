@@ -60,7 +60,7 @@ var (
 
 // Default returns the appropriate Binding instance based on the HTTP method
 // and the content type.
-func Bind(method, contentType string) Binding {
+func Binder(method, contentType string) Binding {
 	if method == "GET" {
 		return Form
 	}
